@@ -10,15 +10,15 @@
 <div class="page_loader"></div>
 
 <div class="sub-banner overview-bgi">
-<div class="container breadcrumb-area">
-<div class="breadcrumb-areas">
-<h1>Login To Your Account</h1>
-<ul class="breadcrumbs">
-  <li><a href="{% url 'home' %}">Home</a></li>
-  <li class="active">Login</li>
-</ul>
-</div>
-</div>
+    <div class="container breadcrumb-area">
+        <div class="breadcrumb-areas">
+            <h1>Login To Your Account</h1>
+            <ul class="breadcrumbs">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li class="active">Login</li>
+            </ul>
+        </div>
+    </div>
 </div>
 <!-- Sub Banner end -->
 
@@ -34,7 +34,8 @@
           </a>
       </div>
       <h3>Sign into your account</h3>
-      <form action="#" method="GET">
+      <form action="{% url 'login' %}" method="POST">
+          {% csrf_token %}
           <div class="form-group form-box">
               <input type="email" name="email" class="input-text" placeholder="Email Address" required>
               <i class="flaticon-mail"></i>
