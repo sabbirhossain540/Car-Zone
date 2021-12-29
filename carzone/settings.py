@@ -167,3 +167,12 @@ SITE_ID = 1
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+#Email Sending
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'bcadc555@gmail.com'
+EMAIL_HOST_PASSWORD = 965874321
+EMAIL_USE_TLS = True
+
