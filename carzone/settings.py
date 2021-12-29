@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'ckeditor',
     'django.contrib.humanize',
     'accounts.apps.AccountsConfig',
+
+    #For Third Party Login
     'django.contrib.sites',
     'allauth',
     'allauth.account',
