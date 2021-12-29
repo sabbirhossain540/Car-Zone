@@ -24,4 +24,6 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('cars/', include('cars.urls')),
     path('accounts/', include('accounts.urls')),
+    #Social Login Url
+    path('socialaccounts/', include('allauth.urls')),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
